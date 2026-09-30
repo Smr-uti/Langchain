@@ -4,7 +4,7 @@ load_dotenv()
 
 from langchain_anthropic import ChatAnthropic
 
-llm = ChatAnthropic(model = "claude-haiku-4-5-2025-1001")
+llm = ChatAnthropic(model = "claude-sonnet-4-6")
 
 query = "What is the capital of india?"
 result = llm.invoke(query)
