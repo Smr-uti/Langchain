@@ -5,10 +5,15 @@ load_dotenv()
 
 bot = ChatGroq(model="openai/gpt-oss-20b")
 
+dialogue_logs = []
+
 while True:
     user_msg = input("You:")
     if user_msg.lower() == "exit":
         break
-    reply = bot.invoke(user_msg)
-    print(f"AI: {reply.content}")
+    dialogue_logs.append(user_msg)
+    print("logs----->", dialogue_logs)
+    reply = bot.invoke(dialogue_logs)
+    dialogue_logs.append(reply.content)
+    print("logs----->", dialogue_logs)
     
