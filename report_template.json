@@ -1,0 +1,17 @@
+{
+    "name": null,
+    "input_variables": [
+        "lines",
+        "subject",
+        "tone"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "Write a report about {subject} in a {tone} tone with {lines} lines",
+    "template_format": "f-string",
+    "validate_template": false,
+    "_type": "prompt"
+}
