@@ -11,7 +11,6 @@ class ReportReview(TypedDict):
     Overview : str
     disadvantage : str
     remedy : str
-    remedy:str
 
 structured_model=llm.with_structured_output(ReportReview)
 
